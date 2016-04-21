@@ -110,7 +110,7 @@ var inputAlert = alert.inputAlert({
     ]
 });
 
-//Chamar o método vazio, utiliza os inputs padrões definidos na inicialização. Chama-lo dessa forma com os inputs vazios resultará numa exception.
+//Chamar o método vazio, utiliza os inputs padrões definidos na inicialização.
 inputAlert.validate();
 ```
 
