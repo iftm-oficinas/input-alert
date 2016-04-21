@@ -40,7 +40,7 @@ Scripts é um array de objetos que deve ser declarado como um campo no objeto pa
 
 3. Sempre que for aplicar a validação, basta chamar a função validate(), passando os parâmetros;
 
-```html
+```javascript
     var alertCamposObrigatorios = $('#alertCamposObrigatorios');
     var inputAlert = alertCamposObrigatorios.inputAlert();
 
@@ -86,7 +86,7 @@ Scripts é um array de objetos que deve ser declarado como um campo no objeto pa
 
 Você pode inicializar o inputAlert já passando todos os parâmetros e chamar a função validade():
 
-```html
+```javascript
 var alertCamposObrigatorios = $('#alertCamposObrigatorios');
 
 //Inicializa com todos os parâmetros.
@@ -116,7 +116,7 @@ inputAlert.validate();
 
 Você pode alterar as validations a qualquer momento:
 
-```html
+```javascript
 var alertCamposObrigatorios = $('#alertCamposObrigatorios');
 var inputAlert = alertCamposObrigatorios.inputAlert();
 
@@ -144,7 +144,7 @@ inputAlert.validate();
 
 Você pode remover o alerta a qualquer momento:
 
-```html
+```javascript
 //Remove o alerta.
 inputAlert.clear();
 ```
