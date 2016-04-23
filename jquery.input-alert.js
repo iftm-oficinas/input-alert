@@ -40,7 +40,7 @@
                     if ($.type(input) != 'object') throw "The input must be an object!";
                     if ((!input.reference) || (!input.rule) || (!input.message)) throw "The input object must contains reference, rule and message!";
 
-                    //Define the search of the input, by name or id.
+                    //Define the search of the input.
                     var elements = $(input.reference);
 
                     //Define the rule.
@@ -50,15 +50,15 @@
                             switch (rule[1]) {
                                 case 'check':
 
-                                    //Validates the entry with rule required, using radios.
-                                    var radioChecked = false;
+                                    //Validates the entry with rule required, using check.
+                                    var checked = false;
 
                                     //Looking for all elements.
                                     $.each(elements, function (index, element) {
-                                        if (element.checked) radioChecked = true;
+                                        if (element.checked) checked = true;
                                     });
 
-                                    if (!radioChecked) messages += input.message + "<br/>";
+                                    if (!checked) messages += input.message + "<br/>";
                                     break;
 
                                 case 'select':
@@ -116,6 +116,7 @@
                     if ($.type(script) != 'object') throw "The script must be an object!";
                     if ((!script.script) || (!script.message)) throw "The script object must contains a script and message!";
 
+                    //Call the script set and receives the result given by the rule.
                     if (!script.script()) {
                         messages += script.message + "<br/>";
                     }
