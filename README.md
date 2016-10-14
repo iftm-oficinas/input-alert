@@ -8,9 +8,9 @@ Um plugin jQuery que ajuda com a validação no client-side.
 # Inputs
 inputs é um array de objetos que deve ser declarado como um campo no objeto passado. Todos os inputs possuem 3 campos obrigatórios: **reference**, **rule** e **message**.
 
-- **reference** - String que deve obedecer o formato de um seletor jquery. EX: "#elemento", ".elemento", "[name="elemento"]", etc.
-- **rule** - String que deve obedecer o formato de "requirde:check", onde o valor que vem antes dos dois pontos é o tipo de regra e o segundo é o tipo de validação utilizada. O segundo valor é o opcional.
-- **message** - String com a mensagem que aparecerá caso a validação retorno false.
+- **reference** - String que deve obedecer o formato de um seletor jquery. EX: "#elemento", ".elemento", "[name='elemento']", etc.
+- **rule** - String que deve obedecer o formato de "required:check", onde o valor que vem antes dos dois pontos é o tipo de regra e o segundo é o tipo de validação utilizada. O segundo valor é o opcional.
+- **message** - String com a mensagem que aparecerá caso a validação retorne false.
 
 As seguintes regras podem ser passadas pelo campo rule do input adicionado:
 
